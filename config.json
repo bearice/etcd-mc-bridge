@@ -1,0 +1,15 @@
+{
+    "config":{
+        "certFile":"etcd_client.crt",
+        "keyFile":"etcd_client.key",
+        "caCertFiles":["etcd_ca.crt"],
+        "consistency":"WEAK"
+    },
+    "cluster":{
+        "machines":[
+            "https://node1.etcd.local:5001",
+            "https://node2.etcd.local:5001",
+            "https://node3.etcd.local:5001"
+        ]
+    }
+}
