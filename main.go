@@ -104,7 +104,7 @@ func serve(conn net.Conn, sessId int) {
                             if err != nil {
                                 log.Print(err)
                             } else {
-                                res.Values = append(res.Values, protocol.McValue{Key: req.Keys[i], Flags: "0", Data: val})
+                                res.Values = append(res.Values, protocol.McValue{Key: req.Keys[i], Flags: "0 0", Data: val})
                             }
                         }
                     }
